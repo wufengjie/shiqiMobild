@@ -1,0 +1,51 @@
+{
+  "name": "pc",
+  "version": "1.0.0",
+  "description": "pc project",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "private": true,
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node_modules/.bin/webpack-dev-server --progress --colors --host 0.0.0.0 --inline --hot --display-error-details --content-base src/",
+    "build": "rimraf ./build && cross-env NODE_ENV=production webpack ",
+    "widget": "rimraf ./node_modules/miox-components/build && NODE_ENV=production webpack --config widgets.config.js"
+  },
+  "project-type": "var",
+  "project-library": "pc",
+  "dependencies": {
+    "vue-resource": "^0.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "cross-env": "^1.0.8",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-minify-loader": "^1.1.0",
+    "html-webpack-plugin": "^2.21.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "miox": "^1.1.25",
+    "miox-components": "^1.0.11",
+    "node-sass": "*",
+    "normalize.css": "*",
+    "postcss-loader": "*",
+    "rimraf": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "sweetalert": "^1.1.3",
+    "url-loader": "*",
+    "vue-drag-and-drop": "^2.0.0",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  },
+  "license": "MIT"
+}
