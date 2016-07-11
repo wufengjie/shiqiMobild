@@ -4,8 +4,10 @@ export default function sidebarInit(wraper,boot){
     return {
         el: wraper,
         data: {
-            sideBarOpen:false
+            sideBarOpen:false,
+            current:''
         },
+
         template: require('../templates/construct.html'),
         replace: false,
         methods: {
@@ -13,6 +15,7 @@ export default function sidebarInit(wraper,boot){
                 if(this.app.$server.pathname != url)
                 this.app.$forward(url);
                 this.menuToggle();
+                this.current = url
             },
             menuToggle(){
                 this.sideBarOpen = !this.sideBarOpen;

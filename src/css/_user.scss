@@ -1,0 +1,107 @@
+
+.me{
+    .wrapper{
+        position: relative;
+        > img{
+            width: 100%
+        }
+        .avatar {
+            width: 30%;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            position: absolute;
+            bottom: -6%;
+            margin-left: -15%;
+            left: 50%;
+        }
+        .job{
+            font-size: 0.8rem;
+            color: #eee;
+        }
+        .wrapper-inner{
+            color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            .name{
+                height: 20%;
+            }
+            .desc{
+                padding-top: 1em;
+            }
+        }
+    }
+    .info{
+        padding: 15px 30px;
+        padding-bottom: 150px;
+        .control{
+            padding: 1em;
+            text-align: center;
+            .title{
+                color: rgba(#1D1D26,.5);
+                font-size: 0.8rem;
+            }
+            .desc{
+                color: #333;
+            }
+        }
+    }
+}
+
+
+
+
+.skill{
+    background-color: #eee;
+    .wrapper{
+        position: relative;
+        color: #fff;
+        >img{
+            width: 100%;
+        }
+        .wrapper-inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            h1{
+                margin-bottom: 0;
+                line-height: 1;
+                font-family: 'Galada', cursive;
+                font-size: 5rem;
+                padding-left: 1em;
+            }
+            h2{
+                font-size: 2rem;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+    .content{
+        .skill-context{
+            padding: 0 15px;
+            font-size: 0.8rem;
+            color: #999;
+            text-indent: 2em;
+        }
+        .progress-bar{
+            font-size: 3rem;
+            margin: 3rem 0 2.2rem;;
+            .tooltip{
+
+                &:after{
+                    margin: -.75em 0 0 0.4em
+
+                }
+            }
+        }
+    }
+}
+
+.hobby{
+    
+}

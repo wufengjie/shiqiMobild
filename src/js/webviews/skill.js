@@ -8,12 +8,15 @@ export default class skill extends webview {
     data(){
         return function(){
             return {
-                userList:[]
+                userList:[],
+                skill:0,
             }
         }
     }
     ready(){
-
+        setTimeout(() =>{
+            this.$vm.skill=80;
+        },0)
     }
     render(){
         return require('../../templates/skill.html')

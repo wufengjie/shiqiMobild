@@ -3,14 +3,13 @@
         <div class="avatar">
             <img src="../imgs/avatar.png" alt="">
         </div>
-
         <nav>
-            <div class="item" @click="redirect('/')">Me | 我</div>
-            <div class="item" @click="redirect('/skill')">Skill | 技能</div>
-            <div class="item" @click="redirect('/hobby')" >Hobby | 兴趣爱好</div>
-            <div class="item" @click="redirect('/character')">Character | 特点</div>
-            <div class="item" @click="redirect('/plan')">Plan | 计划</div>
-            <div class="item" @click="redirect('/contact')">Contact | 联系我</div>
+            <div class="item" :class="{'active':current == '/'}" @click="redirect('/')">Me | 我</div>
+            <div class="item" :class="{'active':current == '/skill'}" @click="redirect('/skill')">Skill | 技能</div>
+            <div class="item" :class="{'active':current == '/hobby'}" @click="redirect('/hobby')" >Hobby | 兴趣爱好</div>
+            <div class="item" :class="{'active':current == '/character'}" @click="redirect('/character')">Character | 特点</div>
+            <div class="item" :class="{'active':current == '/plan'}" @click="redirect('/plan')">Plan | 计划</div>
+            <div class="item" :class="{'active':current == '/contact'}" @click="redirect('/contact')">Contact | 联系我</div>
         </nav>
     </div>
     <div class="menu" @click="menuToggle">
