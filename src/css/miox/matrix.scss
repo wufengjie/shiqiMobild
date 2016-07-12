@@ -5,7 +5,7 @@
 //公共基础样式;
 @import "_base";
 
-@import "_test";
+// @import "_test";
 
 //带命名空间 样式
 .#{$namespace}{
@@ -22,16 +22,16 @@
     @import "_1px";
 
     // //component 组件
-    @import "_appview";
-    @import "_radio";
-    @import "_checkbox";
-    @import "_aspect";
+    // @import "_appview";
+    // @import "_radio";
+    // @import "_checkbox";
+    // @import "_aspect";
     @import "_middle";
     @import "_flex";
-    @import "_cell";
-    @import "_panel";
-    @import "_navgation";
-    @import "_toolbar";
-    @import "_button";
-    @import "_wave";
+    // @import "_cell";
+    // @import "_panel";
+    // @import "_navgation";
+    // @import "_toolbar";
+    // @import "_button";
+    // @import "_wave";
 }

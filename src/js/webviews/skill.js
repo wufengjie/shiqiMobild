@@ -15,8 +15,8 @@ export default class skill extends webview {
     }
     ready(){
         setTimeout(() =>{
-            this.$vm.skill=80;
-        },0)
+            this.$vm.skill=65;
+        },410)
     }
     render(){
         return require('../../templates/skill.html')

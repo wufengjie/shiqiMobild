@@ -1,12 +1,18 @@
 
 body{
-    // background-color: #BA77FF;
+    background-color: #323232;
 }
 .mx-sidebar{
+    color: #fff;
     .avatar{
-        padding-top: 30px;
-        width: 100px;
-
+        padding-top: 60px;
+        padding-bottom: 30px;
+        text-align: center;
+        img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
     }
     nav{
         text-align: right;

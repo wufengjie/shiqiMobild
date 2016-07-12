@@ -10,7 +10,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev node_modules/.bin/webpack-dev-server --progress --colors --host 0.0.0.0 --inline --hot --display-error-details --content-base src/",
-    "build": "rimraf ./build && cross-env NODE_ENV=production webpack ",
+    "build": "rimraf ./build && cross-env NODE_ENV=production webpack -p",
     "widget": "rimraf ./node_modules/miox-components/build && NODE_ENV=production webpack --config widgets.config.js"
   },
   "project-type": "var",

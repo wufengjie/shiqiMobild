@@ -33,9 +33,9 @@ else{
 }
 
 var result = {
-    entry: './node_modules/miox-components/index.js',
+    entry: './src/miox-components/index.js',
     output: {
-        path: './node_modules/miox-components/build/',
+        path: './src/miox-components/build/',
         filename: 'index.js',
         library: 'MioxComponents',
         libraryTarget: 'umd'

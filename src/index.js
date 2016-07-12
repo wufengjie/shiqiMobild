@@ -2,7 +2,7 @@ import './resource'; // 加载资源文件
 
 // load miox and miox-components
 import * as miox from 'miox';
-import mioxs from 'miox-components';
+import mioxs from './miox-components';
 
 // import webviews.
 import ViewIndex from './js/webviews/index';
@@ -12,9 +12,7 @@ import ViewCharacter from './js/webviews/character';
 import ViewSkill from './js/webviews/skill';
 import ViewHobby from './js/webviews/hobby';
 
-import http from 'vue-resource';
-
-import sweetalert from 'sweetalert';
+// import http from 'vue-resource';
 
 import { side } from "./js/api";
 
