@@ -1,6 +1,23 @@
 @import "component.css";
 @import "custom-bars.css";
 
+.wd100{
+    width: 100%;
+}
+.tc{
+    text-align: center;
+}
+.eng{
+    font-family: 'Galada', cursive;
+}
+.c15{
+    color: #fff;
+}
+.scroll-listener{
+    height: 100%;
+    overflow: auto
+}
+
 @import "_reboot";
 
 @import "_construct";

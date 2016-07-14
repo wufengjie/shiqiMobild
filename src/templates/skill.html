@@ -1,18 +1,21 @@
-<appview class="skill">
+<appview class="skill scroll-listener" v-el:container @scroll="scrollHandle">
     <appview-body>
         <div class="wrapper">
-            <img src="../imgs/bg2.png" alt="">
+            <img src="../imgs/bg2.jpg" alt="">
             <div class="wrapper-inner">
-                <h1>
-                    Skills
-                </h1>
-                <h2>我的能力</h2>
+                <middle height="100%">
+                    <h1>
+                        Skills
+                    </h1>
+                    <h2>我的能力</h2>
+                </middle>
+
             </div>
         </div>
         <div class="content">
             <h1 class="mx-text-center">HTML5</h1>
-            <div class="progress-bar">
-				<div class="bar has-rotation has-colors red heat-gradient" role="progressbar" :aria-valuenow="skill" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar ">
+				<div class="bar has-rotation has-colors red heat-gradient scroll-point" aria-valuefinal="60" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                     <div class="tooltip heat-gradient-tooltip"></div>
 					<div class="bar-face face-position roof percentage"></div>
 					<div class="bar-face face-position back percentage"></div>
@@ -23,11 +26,11 @@
 				</div>
 			</div>
             <div class="skill-context">
-                掌握基本的HTML书写规则，了解HTML5提供的一些新的API，能较快地参照设计稿，编写出页面结构。
+                掌握基本的HTML书写规则，了解HTML5提供的一些新的API，能较快地参照设计稿，编写出语义良好，复用性强的页面。
             </div>
-            <h1 class="mx-text-center">CSS3</h1>
-            <div class="progress-bar">
-				<div class="bar has-rotation has-colors cyan " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+            <h1 class="mx-text-center ">CSS3</h1>
+            <div class="progress-bar ">
+				<div class="bar has-rotation has-colors cyan scroll-point" role="progressbar" aria-valuefinal="60" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                     <div class="tooltip heat-gradient-tooltip"></div>
 					<div class="bar-face face-position roof percentage"></div>
 					<div class="bar-face face-position back percentage"></div>
@@ -38,11 +41,11 @@
 				</div>
 			</div>
             <div class="skill-context">
-                掌握基本的HTML书写规则，了解HTML5提供的一些新的API，能较快地参照设计稿，编写出页面结构。
+                有较强的CSS3能力，较高还原度地还原设计稿的布局样式，并且能在Bootstrap下编写响应式布局页面。有一定审美能力，能写出各种CSS3的动画效果。
             </div>
-            <h1 class="mx-text-center">jQuery</h1>
-            <div class="progress-bar">
-				<div class="bar has-rotation has-colors yellow " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <h1 class="mx-text-center ">jQuery</h1>
+            <div class="progress-bar ">
+				<div class="bar has-rotation has-colors yellow scroll-point" role="progressbar" aria-valuefinal="60" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                     <div class="tooltip heat-gradient-tooltip"></div>
 					<div class="bar-face face-position roof percentage"></div>
 					<div class="bar-face face-position back percentage"></div>
@@ -52,9 +55,14 @@
 					<div class="bar-face face-position front percentage volume-lights shine"></div>
 				</div>
 			</div>
-            <h1 class="mx-text-center">jQuery</h1>
-            <div class="progress-bar">
-				<div class="bar has-rotation has-colors lime " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-context">
+                能使用jQuery对Dom节点进行操作，对jQuery提供的Api比较熟悉，能使用ajax请求数据并对数据进行简单的处理。
+            </div>
+
+
+            <h1 class="mx-text-center ">Vue</h1>
+            <div class="progress-bar ">
+				<div class="bar has-rotation has-colors lime scroll-point" role="progressbar" aria-valuefinal="30" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                     <div class="tooltip heat-gradient-tooltip"></div>
 					<div class="bar-face face-position roof percentage"></div>
 					<div class="bar-face face-position back percentage"></div>
@@ -64,9 +72,13 @@
 					<div class="bar-face face-position front percentage volume-lights shine"></div>
 				</div>
 			</div>
-            <h1 class="mx-text-center">jQuery</h1>
-            <div class="progress-bar">
-				<div class="bar has-rotation has-colors dark " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-context">
+                对Vue有一定的了解，虽然理解的还不够透彻，但是已经对MVVM模式的页面有一定的知识积累。
+            </div>
+
+            <h1 class="mx-text-center ">Bootstrap</h1>
+            <div class="progress-bar ">
+				<div class="bar has-rotation has-colors dark scroll-point" role="progressbar" aria-valuefinal="60" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                     <div class="tooltip heat-gradient-tooltip"></div>
 					<div class="bar-face face-position roof percentage"></div>
 					<div class="bar-face face-position back percentage"></div>
@@ -76,9 +88,14 @@
 					<div class="bar-face face-position front percentage volume-lights shine"></div>
 				</div>
 			</div>
-            <h1 class="mx-text-center">jQuery</h1>
-            <div class="progress-bar">
-				<div class="bar has-rotation has-colors orange " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="skill-context">
+                能使用Bootstrap编写各种形式的页面
+            </div>
+
+
+            <h1 class="mx-text-center ">原生JS</h1>
+            <div class="progress-bar ">
+				<div class="bar has-rotation has-colors orange scroll-point" role="progressbar" aria-valuefinal="60" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                     <div class="tooltip heat-gradient-tooltip"></div>
 					<div class="bar-face face-position roof percentage"></div>
 					<div class="bar-face face-position back percentage"></div>
@@ -88,6 +105,9 @@
 					<div class="bar-face face-position front percentage volume-lights shine"></div>
 				</div>
 			</div>
+            <div class="skill-context">
+                能使用Bootstrap编写各种形式的页面
+            </div>
         </div>
     </appview-body>
 </appview>

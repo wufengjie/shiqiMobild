@@ -21,8 +21,15 @@ body{
         .item{
             margin: 1em 0;
             padding-right: 1em;
+            border-right: 4px solid transparent;
+            span{
+                font-family: 'Galada', cursive;
+                border-right: 1px solid #fff;
+                padding-right: 1em;
+                margin-right: 1em;
+            }
             &.active{
-                border-right:  4px solid #FF3366;
+                border-color: #FF3366;
             }
         }
     }
@@ -36,7 +43,7 @@ body{
     padding: 25px 10px;
     border-radius: 50%;
     background-color: #FF3366;
-    margin-left: -15px;
+    margin-left: -25px;
     z-index: 10000;
     > div{
         position: absolute;

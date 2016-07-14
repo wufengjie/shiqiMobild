@@ -1,5 +1,75 @@
-<appview class="hobby">
-    <appview-body>
-        兴趣爱好
+<appview class="hobby scroll-listener" v-el:container @scroll="scrollHandle">
+    <appview-body >
+        <div class="wrapper">
+            <img class="wd100" src="../imgs/bg3.jpg" alt="">
+            <div class="wrapper-inner tc">
+                <middle height="100%">
+                    <h1 class="eng">Hobby</h1>
+                    <h2>我的爱好</h2>
+                </middle>
+            </div>
+        </div>
+        <div class="content overflowy">
+            <div class="hobby-content scroll-point">
+                <div class="hobby-item t1 ">
+                    <div class="hobby-bg fadeLeft" >
+                        <img  src="../imgs/hoby-bgly.jpg" alt="">
+                    </div>
+                    <div class="hobby-text ">
+                        <img class="fadeRight" src="../imgs/hoby_qx.png" alt="">
+                        <div class="fadeUp">
+上路了，就没有回头的机会，抬头看路在你的前面延伸，你不能跨越，因为你不会飞，只有一点点的征服才是最好的选择。
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hobby-content scroll-point">
+                <div class="hobby-item t2 ">
+                    <div class="hobby-bg fadeUp" >
+                        <img  src="../imgs/hoby-bg22.jpg" alt="">
+                    </div>
+                    <div class="hobby-text ">
+                        <img class="fadeLeft" src="../imgs/hoby_sy.png" alt="">
+                        <div class="fadeRight">生活不止眼前的苟且，<br>还有诗和远方的田野。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hobby-content scroll-point">
+                <div class="hobby-item t3 ">
+                    <div class="hobby-bg fadeLeft" >
+                        <img  src="../imgs/hoby-bg3.jpg" alt="">
+                    </div>
+                    <div class="hobby-text fadeDown">
+                        <img  src="../imgs/hoby_pb.png" alt="">
+                        <div>
+                            马不停蹄，是我的态度
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hobby-content scroll-point">
+                <div class="hobby-item t4 fadeUp">
+                    <div class="hobby-bg" >
+                        <img  src="../imgs/hoby-bg4.jpg" alt="">
+                    </div>
+                    <div class="hobby-text">
+                        <img  src="../imgs/hoby_ly.png" alt="">
+                        <div>
+                            如果我有钱，那么
+                            <div class="">
+                                Why not?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </appview-body>
 </appview>

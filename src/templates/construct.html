@@ -1,15 +1,15 @@
 <div :class="{'mx-sidebar-open':sideBarOpen}">
     <div class="mx-sidebar" >
         <div class="avatar">
-            <img src="../imgs/avatar.png" alt="">
+            <img src="../imgs/avatar.jpg" alt="">
         </div>
         <nav>
-            <div class="item" :class="{'active':current == '/'}" @click="redirect('/')">Me | 我</div>
-            <div class="item" :class="{'active':current == '/skill'}" @click="redirect('/skill')">Skill | 技能</div>
-            <div class="item" :class="{'active':current == '/hobby'}" @click="redirect('/hobby')" >Hobby | 兴趣爱好</div>
-            <div class="item" :class="{'active':current == '/character'}" @click="redirect('/character')">Character | 特点</div>
-            <div class="item" :class="{'active':current == '/plan'}" @click="redirect('/plan')">Plan | 计划</div>
-            <div class="item" :class="{'active':current == '/contact'}" @click="redirect('/contact')">Contact | 联系我</div>
+            <div class="item" :class="{'active':current == '/'}" @click="redirect('/')"><span>Me </span>我</div>
+            <div class="item" :class="{'active':current == '/skill'}" @click="redirect('/skill')"><span>Skill</span>技能</div>
+            <div class="item" :class="{'active':current == '/hobby'}" @click="redirect('/hobby')" ><span>Hobby</span>兴趣爱好</div>
+            <div class="item" :class="{'active':current == '/character'}" @click="redirect('/character')"><span>Character</span>特点</div>
+            <div class="item" :class="{'active':current == '/plan'}" @click="redirect('/plan')"><span>Plan</span>计划</div>
+            <div class="item" :class="{'active':current == '/contact'}" @click="redirect('/contact')"><span>Contact</span>联系我</div>
         </nav>
     </div>
     <div class="menu" @click="menuToggle">

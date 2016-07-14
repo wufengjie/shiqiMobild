@@ -42,10 +42,7 @@ function boot(el, sidebar){
     main.on('ready', function(){
         sidebar.app = this;
         this.$sidebar = sidebar;
-
-        this.$modal = sweetalert;
-
-
+        // this.$modal = sweetalert;
     });
 
     main.on('route:start', function(){
