@@ -60,8 +60,15 @@
     .wrapper{
         position: relative;
         color: #fff;
+        &:after{
+            content: "";
+            display: block;
+            padding-bottom: 240/375*100%;
+        }
         >img{
             width: 100%;
+            position: absolute;
+            top:0;
         }
         @at-root .wrapper-inner{
             position: absolute;
@@ -85,7 +92,7 @@
         }
     }
     .content{
-        padding-bottom: 3em;
+        padding-bottom: 6rem;
         .skill-context{
             padding: 0 15px;
             font-size: 0.8rem;
@@ -96,7 +103,7 @@
             font-size: 3rem;
             margin: 3rem 0 2.2rem;;
             .tooltip{
-
+                margin: 2.2em 0 0 -.5em;
                 &:after{
                     margin: -.75em 0 0 0.4em
 
@@ -110,12 +117,24 @@
     .wrapper{
         color: #fff;
         position: relative;
+        >img{
+            position: absolute;
+            top: 0;
+        }
+        &:after{
+            content: "";
+            display: block;
+            padding-bottom: 250/375*100%;
+        }
     }
     .wrapper-inner{
         top: 0;
         position: absolute;
         height: 100%;
         width: 100%;
+    }
+    .hobby-content{
+        // opacity: 0;
     }
     .hobby-item{
         margin: 1rem 0 ;
@@ -188,6 +207,55 @@
     }
 }
 
+.works{
+    .wrapper{
+        color: #fff;
+        position: relative;
+        >img{
+            position: absolute;
+            top: 0;
+        }
+        &:after{
+            content: "";
+            display: block;
+            padding-bottom: 211/375*100%;
+        }
+    }
+    .wrapper-inner{
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        h1{
+            font-size: 4rem;
+        }
+    }
+    .content-title{
+        margin: 0.6em auto;
+    }
+    .work-title{
+        font-size: 1.4rem;
+    }
+    article{
+        padding: 15px;
+        text-indent: 2em;
+    }
+}
+article{
+    padding: 15px;
+    text-indent: 2em;
+}
+.contact{
+    .info{
+        text-align: center;
+        padding: 15px;
+        .control{
+            padding: 10px 0;
+        }
+    }
+}
+
+
 
 .fadeUp{
     opacity: 0;
@@ -227,4 +295,19 @@
 }
 .overflowy{
     overflow-y: hidden;
+}
+
+
+
+
+
+.test1{
+    width: 50px;
+    margin: 20px auto;
+    background-color: #222;
+    &:after{
+        content: "";
+        display: inline-block;
+        padding-bottom: 100%;
+    }
 }

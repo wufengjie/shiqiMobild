@@ -1,14 +1,56 @@
-<appview>
-    <appview-head align='center' >
-        <flex class="pc-head container" justify="center" align-items="center">
-
-            <flex-item  flex='1'>
-                权限管理
-            </flex-item>
-            <flex-item v-redirect url="/login"> <span class="oi oi-menu"></span> </flex-item>
-        </flex>
-    </appview-head>
+<appview class="works scroll-listener" v-el:container @scroll="scrollHandle">
     <appview-body>
-        authadawdadw
+        <div class="wrapper">
+            <img class="wd100" src="../imgs/bg4.jpg" alt="">
+
+        </div>
+        <div class="content margin-menu">
+            <h1 class="eng content-title" align="center">Interest</h1>
+            <article>
+                因为兴趣爱好转的前端，所以，接下来从事的岗位，将是我第一份前端工作。
+                我承认，在作品上，我是匮乏的，但是这并不代表我能力弱，所以我做了这份简历。希望你们能更了解我，能看到我的不同。
+                这份简历，是我在移动端的一个作品。最近，我也做了另外一些PC端的网页，各种类型的，希望你们可以通过这些对我有一个新的认识。
+            </article>
+
+            <div class="work scroll-point">
+                <h1 class="eng work-title fadeRight" align="center">Work No.1</h1>
+                <div class="col-6 fadeUp">
+                    <img src="../imgs/work1.jpg" class="wd100" alt="">
+                </div>
+                <div class="col-6 fadeUp">
+                    <article>这是我自我介绍的网页，虽然设计元素参考了别人的网站，但是所有的代码都是自己写的，
+                    当然还有切图，一些CSS3动画效果，并用了iconfont的一套字体。这个网站采用了单页面切换的方式，使页面在切换起来更有动感，从而增加用户的印象。</article>
+                </div>
+            </div>
+            <div class="work scroll-point">
+                <h1 class="eng work-title fadeLeft" align="center">Work No.2</h1>
+                <div class="col-6 fadeUp">
+                    <img src="../imgs/work2.jpg" class="wd100" alt="">
+                </div>
+                <div class="col-6 fadeUp">
+                    <article>
+                        这也是我的自我介绍网站,但是使用了BootStrap的框架，这个网页是我自己设计的，所以比较不好看，毕竟我不是设计师。这里做了一些滚动的监听，如滚动到位置时的一些入场动画，以及在Bootstrap框架
+                        下的一些自适应。
+                    </article>
+                </div>
+            </div>
+            <div class="work scroll-point">
+                <h1 class="eng work-title fadeDown" align="center">Work No.3</h1>
+                <div class="col-6 fadeUp">
+                    <img src="../imgs/work3.jpg" class="wd100" alt="">
+                </div>
+                <div class="col-6 fadeUp">
+                    <article>
+                        这是在学校做的一个单页面企业网站，也是BootStrap搭的,当然，让我自己纯手写，也是可以做到的。
+                    </article>
+                </div>
+            </div>
+
+            <article>
+                <h2>xushiqi123.github.io</h2>
+                <p>上面是我的GitPage地址，我上传了几个我的作品,可以才PC上登陆看一下</p>
+            </article>
+
+        </div>
     </appview-body>
 </appview>

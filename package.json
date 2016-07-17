@@ -16,6 +16,7 @@
   "project-type": "var",
   "project-library": "pc",
   "dependencies": {
+    "animejs": "^1.1.0",
     "vue-resource": "^0.9.1"
   },
   "devDependencies": {

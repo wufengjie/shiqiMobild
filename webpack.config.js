@@ -11,7 +11,7 @@ var env = process.env.NODE_ENV
     ]
     , loaders = [
         { test: /\.js$/, exclude: /node_modules/, loader: "babel" },
-        { test: /\.(gif|jpg|png)$/, loader: 'url-loader?limit=1000&name=imgs/[name].[ext]'},
+        { test: /\.(gif|jpg|png)$/, loader: 'url-loader?limit=2000&name=imgs/[name].[ext]'},
         { test: /\.(woff|svg|eot|ttf|otf)$/, loader: 'url-loader?limit=1000&name=fonts/[name].[ext]'}
     ];
 

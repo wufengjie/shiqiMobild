@@ -20,6 +20,7 @@ export default class hobby extends webview {
             let length = this.scrollPoint.length;
             while(length--){
                 if(at >= this.scrollPoint[length].offsetTop){
+
                     this.scrollPoint[length].dom.classList.add("animatein");
                     return
                 }

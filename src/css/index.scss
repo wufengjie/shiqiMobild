@@ -1,5 +1,87 @@
+// /* bengali */
+@font-face {
+font-family: 'Galada';
+font-style: normal;
+font-weight: 400;
+src: local('Galada'), local('Galada-Regular'), url('http://7xl9f0.com1.z0.glb.clouddn.com/galada.woff2') format('woff2');
+unicode-range: U+0964-0965, U+0981-09FB, U+200B-200D, U+20B9, U+25CC;
+}
+/* latin */
+@font-face {
+font-family: 'Galada';
+font-style: normal;
+font-weight: 400;
+src: local('Galada'), local('Galada-Regular'), url('http://7xl9f0.com1.z0.glb.clouddn.com/galada2.woff2') format('woff2');
+unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 @import "component.css";
 @import "custom-bars.css";
+
+.preloader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: table;
+    z-index: 111000;
+    .inner{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .logo{
+        padding: 4px;
+        height: 60px;
+        width: 60px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .logo-under{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid rgba(#008cff, 0.6);
+        border-left-color: #008cff;
+        animation: circle 2s linear infinite;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    &.out{
+        animation: fadeOut 1s ease-out forwards;
+    }
+}
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    96%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        z-index: -99;
+        display: none;
+    }
+}
+
+@keyframes circle{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 .wd100{
     width: 100%;
@@ -8,7 +90,7 @@
     text-align: center;
 }
 .eng{
-    font-family: 'Galada', cursive;
+    // font-family: 'Galada', cursive;
 }
 .c15{
     color: #fff;
@@ -17,7 +99,16 @@
     height: 100%;
     overflow: auto
 }
-
+.margin-menu{
+    margin-bottom: 100px;
+}
+.sharelogo{
+    position: absolute;
+    top: -5000px;
+    width: 300px;
+    height: 300px;
+    display: none;
+}
 @import "_reboot";
 
 @import "_construct";

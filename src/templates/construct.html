@@ -1,3 +1,5 @@
+
+
 <div :class="{'mx-sidebar-open':sideBarOpen}">
     <div class="mx-sidebar" >
         <div class="avatar">
@@ -7,7 +9,7 @@
             <div class="item" :class="{'active':current == '/'}" @click="redirect('/')"><span>Me </span>我</div>
             <div class="item" :class="{'active':current == '/skill'}" @click="redirect('/skill')"><span>Skill</span>技能</div>
             <div class="item" :class="{'active':current == '/hobby'}" @click="redirect('/hobby')" ><span>Hobby</span>兴趣爱好</div>
-            <div class="item" :class="{'active':current == '/character'}" @click="redirect('/character')"><span>Character</span>特点</div>
+            <div class="item" :class="{'active':current == '/character'}" @click="redirect('/character')"><span>Works</span>作品</div>
             <div class="item" :class="{'active':current == '/plan'}" @click="redirect('/plan')"><span>Plan</span>计划</div>
             <div class="item" :class="{'active':current == '/contact'}" @click="redirect('/contact')"><span>Contact</span>联系我</div>
         </nav>

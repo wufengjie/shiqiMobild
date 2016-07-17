@@ -42,6 +42,7 @@ function boot(el, sidebar){
     main.on('ready', function(){
         sidebar.app = this;
         this.$sidebar = sidebar;
+        document.querySelector(".preloader").classList.add("out")
         // this.$modal = sweetalert;
     });
 
